@@ -1,15 +1,13 @@
 {
-    const numArray: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    let sum: number = 0;
+    const numArray: number[] = [1, 2, 10, 20];
     function sumArray(numberArray: number[]): number {
+        let sum: number = 0;
         numberArray.map((num: number) => { sum += num; return sum })
         return sum;
     }
 
-    sumArray(numArray);
-    // sumArray([1,2,3]);
+    const total: number = sumArray(numArray);
 
-
-    console.log("Total = ", sum);
+    console.log("Total = ", total);
 
 }
